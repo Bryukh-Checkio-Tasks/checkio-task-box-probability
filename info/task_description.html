@@ -2,20 +2,20 @@
     <img src="{{MEDIA}}title.png" style="max-height: 350px">
 </div>
 <p>
-    To start the game, they put several black and white pearls in one of the boxes.
-    Each robot has <strong>N</strong> moves, then the initial set is restored for the next game.
-    For each move, the robot take a pearl out of the box and puts one of the opposite color back.
-    The winner is the one who takes the white pearl on the <strong>Nth</strong> step.
+    To start the game they put several black and white pearls in one of the boxes.
+    Each robot has <strong>N</strong> moves, after which the initial set is being restored for the next game.
+    Each turn, the robot takes a pearl out of the box and puts one of the opposite color back.
+    The winner is the one who takes the white pearl on the <strong>Nth</strong> move.
 </p>
 
 <p>
-    Our robots don't like uncertainty and want to know the probability of drawing a white pearl on the Nth step.
+    Our robots don't like uncertainty, that's why they want to know the probability of drawing a white pearl on the Nth move.
     The probability is a value between 0 (0% chance or will not happen) and 1 (100% chance or will happen).
-    The result is a float from 0 to 1 with two digits precision (&plusmn;0.01).
+    The result is a float from 0 to 1 with two decimal digits of precision (&plusmn;0.01).
 </p>
 
 <p>
-    You are given a start set of pearls as a string that contains "b" (black) and "w" (white) and the number of the step
+    You are given a start set of pearls as a string that contains "b" (black) and "w" (white) and the number of the move
     (N).
     The order of the pearls does not matter.
 </p>
@@ -25,7 +25,7 @@
 </p>
 
 <p>
-    <strong>Input: </strong> The start sequence of the pearls as a string and the step number as an integer.
+    <strong>Input: </strong> The start sequence of the pearls as a string and the move number as an integer.
 </p>
 
 <p>
@@ -57,7 +57,7 @@ checkio('bwbwbwb', 5) == 0.48
 <p class="for_info_only">
     <strong>How it is used: </strong>
     This task introduces you to the basics of probability theory and statistics.
-    Fun fact: regardless of the initial state, as the number of steps increases, the probability approaches 0.5!
+    Fun fact: regardless of the initial state, as the number of moves increases, the probability approaches 0.5!
 </p>
 
 
